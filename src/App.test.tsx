@@ -8,7 +8,7 @@ describe('App component', () => {
     render(<App />);
 
     // Assert
-    expect(screen.getByText('Todo List')).toBeTruthy();
+    expect(screen.getByText('My Todo List')).toBeTruthy();
     expect(screen.getByPlaceholderText('Enter your todo...')).toBeTruthy();
     expect(screen.getByText('Add Todo')).toBeTruthy();
   });

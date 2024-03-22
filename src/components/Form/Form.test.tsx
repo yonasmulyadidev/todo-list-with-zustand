@@ -10,7 +10,7 @@ describe('Form component', () => {
 
   it('should render form component correctly', () => {
     // Assert
-    expect(screen.getByText('Todo List')).toBeTruthy();
+    expect(screen.getByText('My Todo List')).toBeTruthy();
     expect(screen.getByPlaceholderText('Enter your todo...')).toBeTruthy();
     expect(screen.getByText('Add Todo')).toBeTruthy();
   });

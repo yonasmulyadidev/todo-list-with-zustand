@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# Todo List + Zustand
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project contains of a simple todo list, powered by Zustand as the global state management. This project is created for learning purposes only, mainly to learn basic Zustand.
 
-Currently, two official plugins are available:
+## Tech Stacks
+- Framework using [React 18.2.0](https://legacy.reactjs.org/versions/) + [Tailwind 3.4.1](https://tailwindcss.com/)
+- Global State Management using [Zustand 4.5.2](https://docs.pmnd.rs/zustand/getting-started/introduction) 
+- Design Library using [Material UI 5.15.2](https://mui.com/)
+- Build Tool using [Vite 5.1.6](https://vitejs.dev/)
+- Unit Testing Framework using [Jest 29.7.0](https://jestjs.io/)
+- Code Formatter and Linters using [Prettier](https://prettier.io/) , [EsLint](https://eslint.org/) , [Husky](https://www.npmjs.com/package/husky)
+- [Github Action](https://github.com/features/actions) + [Vercel](https://vercel.com/) for CI/CD
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- List Todo.
+- Add Todo.
+- Remove Todo.
+- Update Todo.
+- All todos are persisted to LocalStorage.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Live Website
+- Link: https://todolist-with-zustand-gw5meaypq-front-end-geeks-projects.vercel.app/

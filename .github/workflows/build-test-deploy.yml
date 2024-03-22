@@ -1,4 +1,4 @@
-name: build-test-deploy
+name: deploy-production
 on:
   workflow_dispatch:
 env:
@@ -23,7 +23,7 @@ jobs:
         run: npm run build
       - name: Unit Test
         run: npm run test
-  deploy-production:
+  deploy-vercel-production:
     needs: build-test
     runs-on: ubuntu-latest
     steps:
