@@ -1,13 +1,26 @@
-name: deploy
-
+name: test-build-deploy
 on:
   workflow_dispatch:
-
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install package-lock.json
+        run: npm ci
+      - name: Jest
+        run: npm run test
   deploy-production:
     runs-on: ubuntu-latest
     steps:
