@@ -20,3 +20,10 @@ This project contains of a simple todo list, powered by Zustand as the global st
 
 ## Live Website
 - Link: https://todolist-with-zustand-gw5meaypq-front-end-geeks-projects.vercel.app/
+
+## Demo
+
+https://github.com/yonasmulyadidev/todo-list-with-zustand/assets/131513009/d7012884-56fc-4397-9409-346ca3e6fa53
+
+
+
