@@ -5,11 +5,7 @@ import { useTodoStore } from '../../store/TodoStore/TodoStore';
 import { todoButtonStyles, todoCardStyles } from './TodoCard.styles';
 import { TodoProps } from './TodoProps';
 
-const TodoCard: FC<TodoProps> = ({
-  id,
-  title,
-  dateCreated
-}) => {
+const TodoCard: FC<TodoProps> = ({ id, title, dateCreated }) => {
   const [updatedTodoText, setUpdatedTodoText] = useState<string>(title);
   const [isContentEditable, setIsContentEditable] = useState<boolean>(false);
 
