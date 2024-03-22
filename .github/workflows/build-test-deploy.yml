@@ -24,6 +24,7 @@ jobs:
       - name: Unit Test
         run: npm run test
   deploy-production:
+    needs: build-test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
